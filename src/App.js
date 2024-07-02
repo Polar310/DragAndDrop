@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import DragAndDrop from './components/DragAndDrop';
+import GlobalStyle from './GlobalStyle';
 
-function App() {
+// change the heading text here. 
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <h1>PDF drop box </h1> 
+      <DragAndDrop />
     </div>
   );
-}
+};
 
 export default App;
